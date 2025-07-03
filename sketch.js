@@ -1,6 +1,9 @@
 //Evanne Robertson
 //6-30-25
-let bkgd;
+
+let flake;
+let bag;
+let thought;
 
 function preload() {
   flake = loadImage("Images/snowflake-removebg-preview.png");
