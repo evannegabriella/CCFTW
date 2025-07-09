@@ -84,13 +84,13 @@ function setup(){
 	startButton.mousePressed(question1)
 
 	answer1button = createButton('')
-	answer1button.position(400, 150)
+	answer1button.position(450, 150)
 
 	answer2button = createButton('')
-	answer2button.position(400, 350)
+	answer2button.position(450, 350)
 
 	answer3button = createButton('')
-	answer3button.position(400, 550)
+	answer3button.position(450, 550)
 
 
 	answer1button.hide()
@@ -104,6 +104,8 @@ function setup(){
 	print(quizQuestions)
 
 	print(quizQuestions[0].answers[1])
+
+	rectMode(CENTER)
 }
 
 function draw(){
@@ -130,20 +132,21 @@ function startQuiz(){
 	background(255)
 	noStroke()
 	fill(111, 14, 138)
-	rect(windowWidth/2 - 280, 0, windowWidth/2.5, windowHeight)
+	rect(windowWidth/2, windowHeight/2, 500, windowHeight)
 
-	image(tacoBell, windowWidth/2 - 270, 10, 250, 200)
-	image(dragon, windowWidth/2 - 20, 10, 250, 200)
+	image(tacoBell, windowWidth/2 - 250, 10, 250, 200)
+	image(dragon, windowWidth/2, 10, 250, 200)
 
-	textSize(35)
+	textSize(34)
 	fill(200)
+	textAlign(CENTER)
 	strokeWeight(1)
 	stroke(2)
-	text("Build a Taco Bell Order and We'll", windowWidth/2 - 270, 270)
-	text("Tell You Which Mythical Beast", windowWidth/2 - 250, 320)
-	text("You're Most Compatible With!", windowWidth/2 - 240, 370)
+	text("Build a Taco Bell Order and We'll", windowWidth/2, 270)
+	text("Tell You Which Mythical Beast", windowWidth/2, 320)
+	text("You're Most Compatible With!", windowWidth/2, 370)
 	textSize(25)
-	text("Hungry for answers? :)", windowWidth/2 - 150, 430)
+	text("Hungry for answers? :)", windowWidth/2, 430)
 
 	
 }
@@ -157,17 +160,18 @@ function question1(){
 	background(255)
 	noStroke()
 	fill(111, 14, 138)
-	rect(windowWidth/2 - 280, 0, windowWidth/2.5, windowHeight)
+	rect(windowWidth/2, windowHeight/2, 500, windowHeight)
 
-	image(softTaco, 530, 100, 150, 150)
-	image(chalupa, 530, 290, 150, 150)
-	image(crunchwrap, 530, 480, 150, 150)
+	image(softTaco, 630, 100, 150, 150)
+	image(chalupa, 630, 290, 150, 150)
+	image(crunchwrap, 630, 480, 150, 150)
 	
 	textSize(35)
 	fill(200)
+	textAlign(CENTER)
 	strokeWeight(1)
 	stroke(2)
-	text(quizQuestions[0].question, 500, 80)
+	text(quizQuestions[0].question, windowWidth/2, 80)
 
 
 	answer1button.html(quizQuestions[0].answers[0])
@@ -190,17 +194,19 @@ function question2(){
 	background(255)
 	noStroke()
 	fill(111, 14, 138)
-	rect(windowWidth/2 - 280, 0, windowWidth/2.5, windowHeight)
+	rect(windowWidth/2, windowHeight/2, 500, windowHeight)
 
-	image(nachoFry, 530, 100, 150, 150)
-	image(fiestaPotatoes, 530, 290, 150, 150)
-	image(chipandCheese, 530, 480, 150, 150)
+	image(nachoFry, 630, 100, 150, 150)
+	image(fiestaPotatoes, 630, 290, 150, 150)
+	image(chipandCheese, 630, 480, 150, 150)
 	
 	textSize(35)
 	fill(200)
+	textAlign(CENTER)
 	strokeWeight(1)
 	stroke(2)
-	text(quizQuestions[1].question, 420, 80)
+	textAlign(CENTER)
+	text(quizQuestions[1].question, windowWidth/2, 80)
 
 
 	answer1button.html(quizQuestions[1].answers[0])
@@ -219,17 +225,18 @@ function question3(){
 	background(255)
 	noStroke()
 	fill(111, 14, 138)
-	rect(windowWidth/2 - 280, 0, windowWidth/2.5, windowHeight)
+	rect(windowWidth/2, windowHeight/2, 500, windowHeight)
 
-	image(bajaBlast, 530, 100, 150, 150)
-	image(mangoTea, 530, 290, 150, 150)
-	image(water, 530, 480, 150, 150)
+	image(bajaBlast, 630, 100, 150, 150)
+	image(mangoTea, 630, 290, 150, 150)
+	image(water, 630, 480, 150, 150)
 	
 	textSize(35)
 	fill(200)
+	textAlign(CENTER)
 	strokeWeight(1)
 	stroke(2)
-	text(quizQuestions[2].question, 400, 80)
+	text(quizQuestions[2].question, windowWidth/2, 80)
 
 
 	answer1button.html(quizQuestions[2].answers[0])
@@ -249,13 +256,14 @@ function question4(){
 	background(255)
 	noStroke()
 	fill(111, 14, 138)
-	rect(windowWidth/2 - 280, 0, windowWidth/2.5, windowHeight)
+	rect(windowWidth/2, windowHeight/2, 500, windowHeight)
 
 	textSize(35)
 	fill(200)
+	textAlign(CENTER)
 	strokeWeight(1)
 	stroke(2)
-	text(quizQuestions[3].question, 400, 80)
+	text(quizQuestions[3].question, windowWidth/2, 60, 550)
 
 
 	answer1button.html(quizQuestions[3].answers[0])
