@@ -96,11 +96,11 @@ function preload(){
   monster1 = loadImage("Images/monster1.jpg")
   monster2 = loadImage("Images/monster2.jpg")
   monster3 = loadImage("Images/monster3.jpeg") 
-  quizMusic = loadSound("Sounds/ModemSound.mp3")
-   growl = loadSound("Sounds/GrowlingMonster.mp3")
-   glitch1 = loadSound("Sounds/glitch1.mp3")
-   glitch2 = loadSound("Sounds/glitch2.mp3")
-  hum = loadSound("Sounds/low-engine-hum.mp3")
+  // quizMusic = loadSound("Sounds/ModemSound.mp3")
+  //  growl = loadSound("Sounds/GrowlingMonster.mp3")
+  //  glitch1 = loadSound("Sounds/glitch1.mp3")
+  //  glitch2 = loadSound("Sounds/glitch2.mp3")
+  // hum = loadSound("Sounds/low-engine-hum.mp3")
 }
 
 function setup(){
