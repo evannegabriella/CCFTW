@@ -47,38 +47,12 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 50px;
   font-family: fontVCR;
   border-radius: 50px;
 
 }
 
-/*.backButton{
-  background-color: #FF0000;
-  border: none;
-  color: white;
-  padding: 10px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  border-radius: 50px;
-
-}
-
-.disabledButton{
-  background-color: #FF0000;
-  border: none;
-  color: white;
-  padding: 10px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  border-radius: 50px;
-  opacity: 0.6;
-  cursor: not-allowed;
-}*/
 
 .popUpButton {
   background-color: rgba(255, 0, 0, 0);
